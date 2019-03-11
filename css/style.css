@@ -31,6 +31,14 @@ html {
     .heading-1 {
       font-size: 5rem; } }
 
+.heading-2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 200;
+  margin: 2rem 0;
+  color: #54483A; }
+
 .heading-4 {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -196,6 +204,58 @@ html {
     margin-bottom: 1.5rem; }
   .feature__text {
     font-size: 2rem; }
+
+.story {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 900px) {
+    .story {
+      flex-direction: row; } }
+  .story__pictures {
+    background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0; }
+    @media (min-width: 900px) {
+      .story__pictures {
+        flex: 0 0 50%;
+        padding: 0; } }
+  .story__img-container {
+    position: relative; }
+  .story__img--1 {
+    max-width: 65%;
+    display: block;
+    margin: 0 auto; }
+  .story__img--2 {
+    max-width: 40%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); }
+    @media (min-width: 900px) {
+      .story__img--2 {
+        max-width: 55%;
+        top: 83%;
+        right: -7%;
+        transform: translateY(-50%); } }
+  .story__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9%;
+    background-color: #f9f7f6;
+    flex: 0 1 auto; }
+    @media (min-width: 600px) {
+      .story__content {
+        flex: 0 0 50%; } }
+  .story__paragraph {
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-bottom: 4rem; }
 
 .btn {
   padding: 1.5rem 3rem;

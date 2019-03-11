@@ -1,0 +1,69 @@
+.story {
+    display: flex;
+    flex-direction: column;
+
+    @include atMedium {
+        flex-direction: row;
+    }
+
+    &__pictures {
+        background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)),  url(../img/back.jpg);
+        background-size: cover;
+        background-position: center;
+        flex: 0 1 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 0;
+
+        @include atMedium {
+            flex: 0 0 50%;
+            padding: 0;
+        }
+    }
+
+    &__img-container {
+        position: relative;
+    }
+
+    &__img--1 {
+        max-width: 65%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__img--2 {
+        max-width: 40%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        transform: translateY(-50%);
+
+        @include atMedium {
+            max-width: 55%;
+            top: 83%;
+            right: -7%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 9%;
+        background-color: #f9f7f6;
+        flex: 0 1 auto;
+    
+        @include atSmall {
+            flex: 0 0 50%;
+        }
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+        font-style: italic;
+        margin-bottom: 4rem;
+    }
+}
