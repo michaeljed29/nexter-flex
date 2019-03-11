@@ -1,0 +1,10 @@
+.sidebar {
+    background-color: $color-primary;
+    flex: 0 0 7rem;
+    display: flex;
+    justify-content: flex-end;
+
+    @include atSmall {
+        justify-content: center;
+    }
+}

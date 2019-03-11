@@ -1,0 +1,77 @@
+.header {
+    background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    flex: 0 1 auto;
+    padding: 3rem 1.5rem;
+    
+    @include atSmall {
+        padding: 3.5rem 8rem 8rem;
+    }
+
+    @include atMedium {
+        flex: 0 0 72%;
+    }
+
+    &__logo {
+        max-width: 15rem;
+        margin: 0 auto;
+        display: block;
+    }
+
+    &__text {
+        margin: 8rem 0rem 6rem;
+        
+        @include atSmall {
+            margin: 10rem 0rem 6rem;
+        }
+    }
+
+    &__seenon-text {
+        margin: 0 auto;
+        font-size: 1.6rem;
+        color: $color-grey-light-2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        &::before, &::after {
+            content: '';
+            flex: 1;
+            display: block;
+            height: 1px;
+            background-color: $color-grey-light-2;
+        }
+
+        &::before {
+            margin-right: 1.5rem;
+        }
+
+        &::after {
+            margin-left: 1.5rem;
+        }
+    }
+    
+    &__seenon-img-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__seenon-img {
+        max-width: 12rem;
+        margin: 3rem;
+
+        @include atSmall {
+            margin: 2rem 0rem;
+
+            &:not(:last-child) {
+                margin-right: 6rem;
+            }
+        }
+    }
+}
+
+
