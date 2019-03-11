@@ -11,6 +11,10 @@
         font-family: $font-display;
         text-transform: uppercase;
     }
+
+    &--block {
+        width: 100%;
+    }
 }
 
 
