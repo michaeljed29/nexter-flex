@@ -21,7 +21,7 @@
 
     &__text {
         margin: 8rem 0rem 6rem;
-        
+
         @include atSmall {
             margin: 10rem 0rem 6rem;
         }
@@ -61,14 +61,15 @@
     }
 
     &__seenon-img {
-        max-width: 12rem;
+        max-width: 10rem;
         margin: 3rem;
+        filter: brightness(70%);
 
         @include atSmall {
             margin: 2rem 0rem;
 
             &:not(:last-child) {
-                margin-right: 6rem;
+                margin-right: 9rem;
             }
         }
     }

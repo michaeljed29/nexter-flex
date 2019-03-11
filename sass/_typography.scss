@@ -21,4 +21,12 @@ html {
     color: $color-primary;
     font-weight: 500;
     font-family: $font-display;
+
+    &--initial {
+        text-transform: initial;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
 }

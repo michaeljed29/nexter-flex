@@ -1,0 +1,44 @@
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 1.5rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+    @include atSmall {
+        flex-direction: row;
+        padding: 8rem 5rem;
+    }
+}
+
+.feature {
+    display: flex;
+    padding: 2rem;
+    flex: 0 0 30%;
+
+    
+
+    &__icon {
+        fill: #c69963;
+        width: 20rem;
+        height: 5rem;
+        align-self: flex-start;
+        transform: translateY(-1.5rem);
+    }
+    
+    &__text-wrapper {
+        margin-left: 2rem;
+    }
+
+    &__title {
+        font-family: $font-display;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        font-size: 2rem;
+    }
+}
