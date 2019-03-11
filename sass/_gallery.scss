@@ -1,0 +1,50 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-grey-light-1;
+
+    &__item {
+        padding: .5rem;
+        flex: 0 0 25%;
+
+        &--1 {
+            flex: 0 0 20%;
+        }
+
+        &--2 {
+            flex: 0 0 40%;
+        }
+
+        &--3 {
+            flex: 0 0 15%;
+        }
+
+        &--5 {
+            flex: 0 0 10%;
+        }
+
+        &--7 {
+            flex: 0 0 10%;
+        }
+
+        &--9 {
+            flex: 0 0 10%;
+        }
+
+        &--10 {
+            flex: 0 0 20%;
+        }
+
+        &--11 {
+            flex: 0 0 34%;
+        }
+
+        &--13 {
+            flex: 0 0 15%;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
